@@ -18,9 +18,9 @@ $namaAkun = "Admin";
     <div class="w-64 bg-white shadow-md flex flex-col justify-between">
       <div>
         <!-- Logo dan Nama -->
-        <div class="flex flex-col items-center py-6 border-b border-gray-300">
-          <img src="icon/logo.png" alt="Logo" class="w-12 h-12 rounded-full mb-2">
-          <h1 class="text-lg font-bold text-blue-500 text-center">Thraz Computer</h1>
+        <div class="flex items-center px-4 py-6 border-b border-gray-300 space-x-3">
+          <img src="icon/logo.png" alt="Logo" class="w-10 h-10 rounded-full">
+          <h1 class="text-lg font-bold text-blue-500">Thraz Computer</h1>
         </div>
 
         <!-- Menu -->
@@ -32,12 +32,16 @@ $namaAkun = "Admin";
             </a>
           </li>
           <li class="flex items-center space-x-2 hover:text-blue-500 cursor-pointer">
-            <span>💳</span>
-            <span>Riwayat Transaksi</span>
+            <a href="riwayat_transaksi.php" class="flex items-center space-x-2">
+              <span>💳</span>
+              <span>Riwayat Transaksi</span>
+            </a>
           </li>
           <li class="flex items-center space-x-2 hover:text-blue-500 cursor-pointer">
-            <span>📦</span>
-            <span>Stok Gudang</span>
+            <a href="stok_gudang.php" class="flex items-center space-x-2">
+              <span>📦</span>
+              <span>Stok Gudang</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -54,22 +58,22 @@ $namaAkun = "Admin";
       <!-- Header -->
       <div class="flex justify-between items-center p-4 border-b border-gray-300 bg-white shadow-sm">
         <div></div>
+
+        <!-- Kanan: Notifikasi dan Admin -->
         <div class="flex items-center space-x-4 text-gray-700">
-          <!-- Notifikasi -->
           <button class="text-xl hover:text-blue-500 cursor-pointer" title="Pemberitahuan">
             🔔
           </button>
-          <!-- Nama Akun -->
           <div class="flex items-center space-x-2">
             <span class="text-sm">👤</span>
-            <span class="text-sm font-medium"></span>
+            <span class="text-sm font-medium"><?php echo $namaAkun; ?></span>
           </div>
         </div>
       </div>
 
       <!-- Konten -->
       <div class="flex-1 flex items-center justify-center">
-        <h1 class="text-2xl font-semibold">Selamat Datang Admin</h1>
+        <h1 class="text-2xl font-semibold">Selamat Datang <?php echo $namaAkun; ?></h1>
       </div>
 
     </div>

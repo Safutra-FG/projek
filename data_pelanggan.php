@@ -17,10 +17,10 @@ $namaAkun = "Admin";
     <!-- Sidebar -->
     <div class="w-64 bg-white shadow-md flex flex-col justify-between">
       <div>
-        <!-- Logo -->
-        <div class="flex flex-col items-center py-6 border-b border-gray-300">
-          <img src="icon/logo.png" alt="Logo" class="w-12 h-12 rounded-full mb-2">
-          <h1 class="text-lg font-bold text-blue-500 text-center">Thraz Computer</h1>
+        <!-- Logo & Nama (sejajar horizontal) -->
+        <div class="flex items-center px-4 py-6 border-b border-gray-300 space-x-3">
+          <img src="icon/logo.png" alt="Logo" class="w-10 h-10 rounded-full">
+          <h1 class="text-lg font-bold text-blue-500">Thraz Computer</h1>
         </div>
 
         <!-- Menu -->
@@ -30,12 +30,17 @@ $namaAkun = "Admin";
             <span>Data Pelanggan</span>
           </li>
           <li class="flex items-center space-x-2 hover:text-blue-500 cursor-pointer">
-            <span>💳</span>
-            <span>Riwayat Transaksi</span>
-          </li>
-          <li class="flex items-center space-x-2 hover:text-blue-500 cursor-pointer">
-            <span>📦</span>
-            <span>Stok Gudang</span>
+  <a href="riwayat_transaksi.php" class="flex items-center space-x-2">
+    <span>💳</span>
+    <span>Riwayat Transaksi</span>
+  </a>
+</li>
+
+         <li class="flex items-center space-x-2 hover:text-blue-500 cursor-pointer">
+            <a href="stok_gudang.php" class="flex items-center space-x-2">
+              <span>📦</span>
+              <span>Stok Gudang</span>
+            </a>
           </li>
         </ul>
       </div>
